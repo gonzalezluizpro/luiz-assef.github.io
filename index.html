@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --accent-color: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fff;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--secondary-color);
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        .experience-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--light-gray);
+            border-radius: 5px;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
+        
+        .company {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+        
+        .date {
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            margin-bottom: 1.5rem;
+        }
+        
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .skill-item {
+            background: var(--light-gray);
+            padding: 0.8rem 1rem;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid var(--secondary-color);
+            transition: transform 0.2s;
+        }
+        
+        .skill-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .certification-item {
+            background: var(--light-gray);
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .language-item {
+            background: var(--light-gray);
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .language-level {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+            }
+            
+            .skills-grid, .certifications {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Luiz Assef</h1>
+        <p>Feature Engineer | Scrum Master | Cloud & DevOps Professional</p>
+        <div class="contact-info">
+            <div class="contact-item">📱 (+352) 691303502</div>
+            <div class="contact-item">📧 gonzalezluizpro@gmail.com</div>
+            <div class="contact-item">📍 Porto, Portugal</div>
+            <div class="contact-item">🔗 linkedin.com/in/luizgonzalezpro</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">About Me</h2>
+        <p>Experienced Cloud and DevOps professional with over 16 years in the technology industry, including leading complex projects for banks and global events. Skilled in DevOps practices, cloud infrastructure management, automation, and agile methodologies. Certified in AWS and Azure, with strong expertise in tools such as Terraform, Docker, Kubernetes, and CI/CD pipelines.</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company">ING - Feature Engineer / Scrum Master</div>
+                <div class="date">08/2023 – Present | Luxembourg</div>
+            </div>
+            <ul>
+                <li>Facilitate cross-functional collaboration between IT and Business stakeholders</li>
+                <li>Lead Agile processes and Scrum events, including daily stand-ups, sprint planning, reviews, and retrospectives</li>
+                <li>Drive roadmap alignment across squads, managing dependencies within and between Tribes</li>
+                <li>Lead solution approach with in-depth knowledge of both Business and IT</li>
+                <li>Projects: Digital Operational Resilience Act (DORA), Constellation - Bancomat Shared Network for ATMs</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company">European Investment Bank - IT Consultant / Project Manager</div>
+                <div class="date">01/2021 – 01/2023 | Luxembourg</div>
+            </div>
+            <ul>
+                <li>Upgraded 10 Windows Server from 2016 to 2022 version (UAT and PROD)</li>
+                <li>Managed the entire lifecycle to deploy the Brainwave application from scratch</li>
+                <li>Implemented monitoring for 12 applications - Nagios and Grafana dashboard (incidents decrease by 50%)</li>
+                <li>Maintained key business applications and systems</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company">I2S Insurance Knowledge - Technical Application Support / Support Manager</div>
+                <div class="date">01/2019 – 12/2020 | Porto, Portugal</div>
+            </div>
+            <ul>
+                <li>Managed teams for maintenance and organization of external customers</li>
+                <li>Developed activities and project support for Banco BPI</li>
+                <li>Managed software development lifecycle and maintenance plans</li>
+                <li>Worked with various technologies including Windows Server, Java, .Net, Docker, WSO2</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company">BNP Paribas - Application Production Support</div>
+                <div class="date">09/2018 – 01/2019 | Lisboa, Portugal</div>
+            </div>
+            <ul>
+                <li>Provided production support to operational teams across London, New York, Paris, Luxembourg and Lisbon</li>
+                <li>Handled on-call duties for night batch processes and US Time zone</li>
+                <li>Participated in project lifecycle phases including estimation, analysis, development, and testing</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company">Claranet - IT Support Analyst</div>
+                <div class="date">12/2017 – 08/2018 | Porto, Portugal</div>
+            </div>
+            <ul>
+                <li>Supported 5000 users, handling 40 calls per day</li>
+                <li>Managed Windows infrastructure, network troubleshooting, and customer service</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company">BRQ - Systems Analyst</div>
+                <div class="date">12/2016 – 07/2017 | Rio de Janeiro, Brazil</div>
+            </div>
+            <ul>
+                <li>Supported IBMS and SIDI applications using SCRUM and PMBOK methodology</li>
+                <li>Managed configuration changes and versioning of systems</li>
+                <li>Created and updated functional and technical documentation</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company">ATOS - Assistant Venue IT Manager</div>
+                <div class="date">06/2016 – 09/2016 | Rio de Janeiro, Brazil</div>
+            </div>
+            <ul>
+                <li>Managed infrastructure for Rio 2016 Olympic Games</li>
+                <li>Supported key clients including Omega, Olympic Broadcast Services, Riedel, Panasonic</li>
+                <li>Implemented cloud infrastructure and managed incident response</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company">Kronos Soluções - IT Support Assistant</div>
+                <div class="date">02/2007 – 05/2016 | Rio de Janeiro, Brazil</div>
+            </div>
+            <ul>
+                <li>Managed diverse IT environments including servers, networks, and virtualization solutions</li>
+                <li>Transitioned on-premises infrastructure to cloud-hosted virtual environments</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Cloud Platforms</h3>
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Microsoft Azure</div>
+                <div class="skill-item">RedHat Linux</div>
+            </div>
+            <div class="skill-category">
+                <h3>DevOps & Automation</h3>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">Kubernetes</div>
+                <div class="skill-item">Ansible</div>
+                <div class="skill-item">Terraform</div>
+            </div>
+            <div class="skill-category">
+                <h3>CI/CD & Tools</h3>
+                <div class="skill-item">Azure DevOps</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">Jenkins</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education & Certifications</h2>
+        
+        <h3 style="color: var(--primary-color); margin: 1rem 0;">Education</h3>
+        <div class="certifications">
+            <div class="certification-item">MBA in Project Management and Agile Methodologies - PUCRS (2022-Current)</div>
+            <div class="certification-item">Information Technology Management - Estacio University (2017-2021)</div>
+        </div>
+
+        <h3 style="color: var(--primary-color); margin: 1rem 0;">Professional Certifications</h3>
+        <div class="certifications">
+            <div class="certification-item">AWS Certified Cloud Practitioner (2024-2027)</div>
+            <div class="certification-item">Data Landscape of GenAI for Project Managers (2024)</div>
+            <div class="certification-item">Confluence Fundamentals Badge (2024)</div>
+            <div class="certification-item">Generative AI Overview for Project Managers (2024)</div>
+            <div class="certification-item">Management 3.0 Foundation (2023)</div>
+            <div class="certification-item">Professional Scrum Master™ I (PSM I) (2023)</div>
+            <div class="certification-item">AZ-900 Azure Fundamentals (2023)</div>
+            <div class="certification-item">CAPM - Project Management Institute (2021)</div>
+            <div class="certification-item">Linux Essentials (2019)</div>
+            <div class="certification-item">ITIL® Foundation Certificate (2015)</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Languages</h2>
+        <div class="language-grid">
+            <div class="language-item">
+                <strong>Portuguese</strong>
+                <div class="language-level">Native</div>
+            </div>
+            <div class="language-item">
+                <strong>English</strong>
+                <div class="language-level">C1 - Proficient</div>
+            </div>
+            <div class="language-item">
+                <strong>French</strong>
+                <div class="language-level">B2 - Independent</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
