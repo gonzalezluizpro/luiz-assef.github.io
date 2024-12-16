@@ -19,9 +19,9 @@ Experienced Cloud and DevOps professional with over 16 years in the technology i
 ## 🛠️ Technical Stack
 
 ### Cloud & Infrastructure
-- AWS, Microsoft Azure, RedHat Linux
+- AWS, Microsoft Azure
 - Docker, Kubernetes, Ansible, Terraform
-- Windows Server, Active Directory
+- Windows Server, RedHat Linux
 
 ### DevOps & Tools
 - Azure DevOps, Git, Jenkins
