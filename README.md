@@ -1,74 +1,99 @@
-# Luiz Assef - Professional Profile
+# Professional CV - Luiz Assef
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)](https://linkedin.com/in/luizgonzalezpro)
-![Location](https://img.shields.io/badge/Location-Porto%2C%20Portugal-green.svg)
-![Focus](https://img.shields.io/badge/Focus-DevOps%20%7C%20Cloud%20%7C%20Agile-red.svg)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)](https://www.linkedin.com/in/luizgonzalezpro/)
+![Location](https://img.shields.io/badge/Location-Luxembourg-green.svg)
+![Last Update](https://img.shields.io/badge/Last%20Update-December%202024-brightgreen.svg)
 
-## 🚀 About Me
+## 🚀 Overview
 
-Experienced Cloud and DevOps professional with over 16 years in the technology industry. Currently serving as a Feature Engineer and Scrum Master at ING Luxembourg, focusing on delivering complex projects and driving digital transformation initiatives.
+Welcome to my professional CV repository! I'm an IT Project Manager and Scrum Master with over 16 years of experience in the technology industry. This repository contains my interactive HTML CV showcasing my experience, skills, and professional achievements.
 
 ## 💼 Professional Highlights
 
-- **Current Role**: Feature Engineer & Scrum Master at ING
-- **Expertise**: Cloud Infrastructure, DevOps, Agile Methodologies
-- **Industry Experience**: Banking, Financial Services, Olympics
-- **Location**: Based in Porto, Portugal
+- **Current Role**: Feature Engineer & Scrum Master at ING Luxembourg
+- **Experience**: 16+ years in IT, including Olympic Games, Banking, and Financial Services
+- **Expertise**: Project Management, Agile Methodologies, DevOps, Cloud Infrastructure
+- **Location**: Luxembourg
 - **Languages**: Portuguese (Native), English (C1), French (B2)
 
 ## 🛠️ Technical Stack
 
 ### Cloud & Infrastructure
 - AWS, Microsoft Azure
-- Docker, Kubernetes, Ansible, Terraform
-- Windows Server, RedHat Linux
+- Docker, Kubernetes, Terraform
+- Windows Server, Linux (RedHat, CentOS)
 
 ### DevOps & Tools
 - Azure DevOps, Git, Jenkins
 - PowerShell, Python
 - Grafana, Nagios
 
-### Databases
-- Microsoft SQL
-- Oracle
-- Sybase
+### Project Management
+- Agile & Waterfall Methodologies
+- JIRA, Confluence, Microsoft Project
+- Risk Management & Budget Control
+- Generative AI Implementation
 
-## 🏆 Key Projects
+## 🎯 Key Projects
 
 - **Digital Operational Resilience Act (DORA)** - ING Luxembourg
 - **Constellation** - Bancomat Shared Network for ATMs
-- **Rio 2016 Olympics** - Infrastructure Management for Key Clients
-- **EIB Systems Modernization** - 50% Reduction in Incidents
+- **Rio 2016 Olympics** - IT Infrastructure Management
+- **EIB Systems Modernization** - Reduced Incidents by 50%
 
-## 📜 Certifications
+## 📜 Latest Certifications
 
-- AWS Certified Cloud Practitioner
-- AZ-900 Azure Fundamentals
-- Professional Scrum Master™ I (PSM I)
-- CAPM - Certified Associate in Project Management
-- Management 3.0 Foundation
-- ITIL® Foundation
+- AWS Certified Cloud Practitioner (2024)
+- Data Landscape of GenAI for Project Managers (2024)
+- Management 3.0 Foundation (2023)
+- Professional Scrum Master™ I (PSM I) (2023)
+- AZ-900 Azure Fundamentals (2023)
 
-## 🎓 Education
+## 🖥️ CV Website
 
-- MBA in Project Management and Agile Methodologies (In Progress)
-- Information Technology Management
-- Multiple Professional Certifications in Cloud, Agile, and Project Management
+The CV is built using modern HTML5 and CSS3, featuring:
+- Responsive design for all devices
+- Clean and professional layout
+- Interactive elements
+- Printer-friendly styling
+
+### Local Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/cv.git
+cd cv
+```
+
+2. Open index.html in your browser:
+```bash
+# On macOS
+open index.html
+
+# On Linux
+xdg-open index.html
+
+# On Windows
+start index.html
+```
+
+### Deployment
+
+The CV is automatically deployed using GitHub Pages and can be accessed at: [your-github-pages-url]
 
 ## 📫 Contact
 
 - **Email**: gonzalezluizpro@gmail.com
-- **LinkedIn**: [linkedin.com/in/luizgonzalezpro](https://linkedin.com/in/luizgonzalezpro)
+- **LinkedIn**: [linkedin.com/in/luizgonzalezpro](https://www.linkedin.com/in/luizgonzalezpro/)
 - **Phone**: (+352) 691303502
 
-## 📈 Recent Focuses
+## 📄 License
 
-- Cloud Infrastructure Optimization
-- Agile Transformation
-- DevOps Implementation
-- Team Leadership and Mentoring
-- Cross-functional Collaboration
+This CV is protected under [Personal CV License](LICENSE.md). All rights reserved.
 
 ---
 
-💡 **Open to exciting opportunities and collaborations in Cloud, DevOps, and Agile Leadership roles!**
+💡 **Open to exciting opportunities in Project Management, Agile Leadership, and Cloud/DevOps roles!**
+
+### Note
+This CV is regularly updated. Last update: December 2024
