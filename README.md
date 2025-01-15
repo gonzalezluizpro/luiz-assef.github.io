@@ -1,99 +1,73 @@
-# Professional CV - Luiz Assef
+# 👋 Hi, I'm Luiz Assef
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)](https://www.linkedin.com/in/luizgonzalezpro/)
-![Location](https://img.shields.io/badge/Location-Luxembourg-green.svg)
-![Last Update](https://img.shields.io/badge/Last%20Update-December%202024-brightgreen.svg)
+> Agile Leader | Scrum Master | Project Manager
 
-## 🚀 Overview
+Experienced Agile leader with over 16 years in technology, specializing in Product Ownership, Scrum Mastery, and digital transformation. Currently empowering teams and driving digital innovation through Agile leadership at ING Luxembourg.
 
-Welcome to my professional CV repository! I'm an IT Project Manager and Scrum Master with over 16 years of experience in the technology industry. This repository contains my interactive HTML CV showcasing my experience, skills, and professional achievements.
+## 🚀 Professional Summary
 
-## 💼 Professional Highlights
+- 🎯 Feature Engineer & Scrum Master at ING, leading DORA implementation
+- 🏦 Former IT Consultant at European Investment Bank
+- 🏅 Olympic Games IT experience (Rio 2016)
+- 🌍 Based in Luxembourg
+- 🗣️ Trilingual: Portuguese (Native), English (C1), French (B2)
 
-- **Current Role**: Feature Engineer & Scrum Master at ING Luxembourg
-- **Experience**: 16+ years in IT, including Olympic Games, Banking, and Financial Services
-- **Expertise**: Project Management, Agile Methodologies, DevOps, Cloud Infrastructure
-- **Location**: Luxembourg
-- **Languages**: Portuguese (Native), English (C1), French (B2)
+## 💼 Core Competencies
 
-## 🛠️ Technical Stack
+### Leadership & Management
+- Agile Leadership & Transformation
+- Product Ownership & Backlog Management
+- Cross-functional Team Leadership
+- Risk Management & Mitigation
+- Budget Planning & Control
+- Stakeholder Management
 
-### Cloud & Infrastructure
-- AWS, Microsoft Azure
-- Docker, Kubernetes, Terraform
-- Windows Server, Linux (RedHat, CentOS)
+### Technical Skills
+- **Agile Tools:** JIRA, Confluence, Trello
+- **Cloud Platforms:** AWS, Azure
+- **DevOps:** Git, Azure DevOps, Jenkins
+- **Monitoring:** Nagios, Grafana
+- **ITSM:** BMC Remedy, ServiceNow
+- **Programming:** PowerShell, Python
 
-### DevOps & Tools
-- Azure DevOps, Git, Jenkins
-- PowerShell, Python
-- Grafana, Nagios
+## 🎓 Latest Certifications
 
-### Project Management
-- Agile & Waterfall Methodologies
-- JIRA, Confluence, Microsoft Project
-- Risk Management & Budget Control
-- Generative AI Implementation
+- Professional Scrum Product Owner™ I (PSPO I) - 2025
+- AWS Certified Cloud Practitioner - 2024
+- Professional Scrum Master™ I (PSM I) - 2023
+- Management 3.0 Foundation - 2023
+- AZ-900 Azure Fundamentals - 2023
 
-## 🎯 Key Projects
+## 🏆 Key Achievements
 
-- **Digital Operational Resilience Act (DORA)** - ING Luxembourg
-- **Constellation** - Bancomat Shared Network for ATMs
-- **Rio 2016 Olympics** - IT Infrastructure Management
-- **EIB Systems Modernization** - Reduced Incidents by 50%
+- Led Digital Operational Resilience Act (DORA) implementation at ING
+- Reduced incidents by 50% through monitoring implementation at EIB
+- Successfully managed Constellation project (Bancomat Shared Network for ATMs in Luxembourg)
+- Upgraded 10 Windows Servers from 2016 to 2022 version (UAT and PROD)
+- Implemented monitoring solutions for 12 critical applications
 
-## 📜 Latest Certifications
+## 🌟 Recent Projects
 
-- AWS Certified Cloud Practitioner (2024)
-- Data Landscape of GenAI for Project Managers (2024)
-- Management 3.0 Foundation (2023)
-- Professional Scrum Master™ I (PSM I) (2023)
-- AZ-900 Azure Fundamentals (2023)
+### ING Luxembourg (2023-2024)
+- Digital Operational Resilience Act (DORA) implementation
+- Constellation, Bancomat Shared Network for ATMs
 
-## 🖥️ CV Website
+### European Investment Bank (2021-2023)
+- System modernization and infrastructure upgrades
+- Implementation of monitoring solutions
+- Application lifecycle management
 
-The CV is built using modern HTML5 and CSS3, featuring:
-- Responsive design for all devices
-- Clean and professional layout
-- Interactive elements
-- Printer-friendly styling
+## 📚 Education
 
-### Local Development
+- MBA in Project Management and Agile Methodologies - Pontifícia Universidade Católica do Rio Grande do Sul (2022-2024)
+- Information Technology Management - Estacio University (2017-2021)
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/cv.git
-cd cv
-```
+## 📫 Let's Connect
 
-2. Open index.html in your browser:
-```bash
-# On macOS
-open index.html
-
-# On Linux
-xdg-open index.html
-
-# On Windows
-start index.html
-```
-
-### Deployment
-
-The CV is automatically deployed using GitHub Pages and can be accessed at: [your-github-pages-url]
-
-## 📫 Contact
-
-- **Email**: gonzalezluizpro@gmail.com
-- **LinkedIn**: [linkedin.com/in/luizgonzalezpro](https://www.linkedin.com/in/luizgonzalezpro/)
-- **Phone**: (+352) 691303502
-
-## 📄 License
-
-This CV is protected under [Personal CV License](LICENSE.md). All rights reserved.
+- 📧 Email: gonzalezluizpro@gmail.com
+- 💼 LinkedIn: [luizgonzalezpro](https://linkedin.com/in/luizgonzalezpro/)
+- 📍 Location: Luxembourg
 
 ---
 
-💡 **Open to exciting opportunities in Project Management, Agile Leadership, and Cloud/DevOps roles!**
-
-### Note
-This CV is regularly updated. Last update: December 2024
+💡 Available for freelance projects and consulting opportunities.
