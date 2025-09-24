@@ -1,73 +1,45 @@
 # 👋 Hi, I'm Luiz Assef
 
-> Agile Leader | Scrum Master | Project Manager
+> Cloud Engineer | DevOps Enthusiast | Solutions Architect in Progress
 
-Experienced Agile leader with over 16 years in technology, specializing in Product Ownership, Scrum Mastery, and digital transformation. Currently empowering teams and driving digital innovation through Agile leadership at ING Luxembourg.
+With 16+ years in IT and project delivery across Europe and Latin America, I am now focused on **Cloud Engineering, DevOps, and Infrastructure as Code**. My expertise spans **AWS, Azure, Terraform, CI/CD pipelines, and monitoring solutions**.  
+I am building a portfolio of **hands-on projects** to demonstrate practical cloud solutions.
 
-## 🚀 Professional Summary
+## 🚀 Cloud & DevOps Skills
 
-- 🎯 Feature Engineer & Scrum Master at ING, leading DORA implementation
-- 🏦 Former IT Consultant at European Investment Bank
-- 🏅 Olympic Games IT experience (Rio 2016)
-- 🌍 Based in Luxembourg
-- 🗣️ Trilingual: Portuguese (Native), English (C1), French (B2)
-
-## 💼 Core Competencies
-
-### Leadership & Management
-- Agile Leadership & Transformation
-- Product Ownership & Backlog Management
-- Cross-functional Team Leadership
-- Risk Management & Mitigation
-- Budget Planning & Control
-- Stakeholder Management
-
-### Technical Skills
-- **Agile Tools:** JIRA, Confluence, Trello
-- **Cloud Platforms:** AWS, Azure
-- **DevOps:** Git, Azure DevOps, Jenkins
-- **Monitoring:** Nagios, Grafana
-- **ITSM:** BMC Remedy, ServiceNow
-- **Programming:** PowerShell, Python
+- **Cloud Platforms:** AWS (Solutions Architect Associate in progress), Azure (AZ-104 in progress)  
+- **Infrastructure as Code:** Terraform, AWS CloudFormation  
+- **CI/CD & DevOps:** GitHub Actions, Jenkins, Azure DevOps  
+- **Containers & Orchestration:** Docker, Kubernetes (learning path)  
+- **Monitoring & Logging:** Grafana, CloudWatch, Prometheus  
+- **Programming:** Python, Bash, PowerShell  
 
 ## 🎓 Latest Certifications
 
-- Professional Scrum Product Owner™ I (PSPO I) - 2025
-- AWS Certified Cloud Practitioner - 2024
-- Professional Scrum Master™ I (PSM I) - 2023
-- Management 3.0 Foundation - 2023
-- AZ-900 Azure Fundamentals - 2023
+- AWS Certified Cloud Practitioner – 2024  
+- AZ-900 Azure Fundamentals – 2023  
+- Professional Scrum Product Owner (PSPO I) – 2025  
+- Professional Scrum Master (PSM I) – 2023  
 
-## 🏆 Key Achievements
+## 🌟 Hands-on Projects
 
-- Led Digital Operational Resilience Act (DORA) implementation at ING
-- Reduced incidents by 50% through monitoring implementation at EIB
-- Successfully managed Constellation project (Bancomat Shared Network for ATMs in Luxembourg)
-- Upgraded 10 Windows Servers from 2016 to 2022 version (UAT and PROD)
-- Implemented monitoring solutions for 12 critical applications
-
-## 🌟 Recent Projects
-
-### ING Luxembourg (2023-2024)
-- Digital Operational Resilience Act (DORA) implementation
-- Constellation, Bancomat Shared Network for ATMs
-
-### European Investment Bank (2021-2023)
-- System modernization and infrastructure upgrades
-- Implementation of monitoring solutions
-- Application lifecycle management
+- **AWS S3 + CloudFront Website Hosting** – static website deployment  
+- **Terraform AWS Infrastructure** – EC2, VPC, and IAM automation  
+- **Azure Virtual Network** – lab for AZ-104 exam  
+- **CI/CD Pipeline with GitHub Actions** – automated testing & deployment  
 
 ## 📚 Education
 
-- MBA in Project Management and Agile Methodologies - Pontifícia Universidade Católica do Rio Grande do Sul (2022-2024)
-- Information Technology Management - Estacio University (2017-2021)
+- MBA in Project Management and Agile Methodologies – PUCRS (2022–2024)  
+- IT Management – Estácio University (2017–2021)  
 
-## 📫 Let's Connect
+## 📫 Let’s Connect
 
-- 📧 Email: gonzalezluizpro@gmail.com
-- 💼 LinkedIn: [luizgonzalezpro](https://linkedin.com/in/luizgonzalezpro/)
-- 📍 Location: Luxembourg
+- 📧 gonzalezluizpro@gmail.com  
+- 💼 [LinkedIn](https://linkedin.com/in/luizgonzalezpro)  
+- 🌍 Based in Luxembourg  
 
 ---
 
-💡 Available for freelance projects and consulting opportunities.
+💡 **Available for freelance projects and consulting opportunities.**
+_Currently studying for **AWS Solutions Architect Associate** and **Terraform Associate**._ 
