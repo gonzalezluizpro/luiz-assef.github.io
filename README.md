@@ -1,45 +1,64 @@
 # 👋 Hi, I'm Luiz Assef
 
-> Cloud Engineer | DevOps Enthusiast | Solutions Architect in Progress
-
-With 16+ years in IT and project delivery across Europe and Latin America, I am now focused on **Cloud Engineering, DevOps, and Infrastructure as Code**. My expertise spans **AWS, Azure, Terraform, CI/CD pipelines, and monitoring solutions**.  
-I am building a portfolio of **hands-on projects** to demonstrate practical cloud solutions.
-
-## 🚀 Cloud & DevOps Skills
-
-- **Cloud Platforms:** AWS (Solutions Architect Associate in progress), Azure (AZ-104 in progress)  
-- **Infrastructure as Code:** Terraform, AWS CloudFormation  
-- **CI/CD & DevOps:** GitHub Actions, Jenkins, Azure DevOps  
-- **Containers & Orchestration:** Docker, Kubernetes (learning path)  
-- **Monitoring & Logging:** Grafana, CloudWatch, Prometheus  
-- **Programming:** Python, Bash, PowerShell  
-
-## 🎓 Latest Certifications
-
-- AWS Certified Cloud Practitioner – 2024  
-- AZ-900 Azure Fundamentals – 2023  
-- Professional Scrum Product Owner (PSPO I) – 2025  
-- Professional Scrum Master (PSM I) – 2023  
-
-## 🌟 Hands-on Projects
-
-- **AWS S3 + CloudFront Website Hosting** – static website deployment  
-- **Terraform AWS Infrastructure** – EC2, VPC, and IAM automation  
-- **Azure Virtual Network** – lab for AZ-104 exam  
-- **CI/CD Pipeline with GitHub Actions** – automated testing & deployment  
-
-## 📚 Education
-
-- MBA in Project Management and Agile Methodologies – PUCRS (2022–2024)  
-- IT Management – Estácio University (2017–2021)  
-
-## 📫 Let’s Connect
-
-- 📧 gonzalezluizpro@gmail.com  
-- 💼 [LinkedIn](https://linkedin.com/in/luizgonzalezpro)  
-- 🌍 Based in Luxembourg  
+> **Senior Cloud & IT Operations Engineer** | AWS · Azure | Financial Services | 📍 Luxembourg → 🇦🇺 Relocating to Australia
 
 ---
 
-💡 **Available for freelance projects and consulting opportunities.**
-_Currently studying for **AWS Solutions Architect Associate** and **Terraform Associate**._ 
+With **15+ years** supporting mission-critical systems in **regulated financial environments** across Europe and Latin America, I specialise in **cloud operations**, **production reliability**, and **technical delivery** at enterprise scale.
+
+Most recently at **BEAM Luxembourg** (cloud-hosted financial systems) and **ING Luxembourg** (Technical Delivery & Platform Operations in a regulated banking environment). I'm now actively relocating to **Australia** and open to **employer sponsorship (Subclass 482 / 186)**.
+
+---
+
+## 🛠️ Core Skills
+
+| Domain | Stack |
+|---|---|
+| **Cloud Platforms** | AWS (EC2, S3, CloudWatch, Lambda) · Microsoft Azure (VMs, Monitor, Log Analytics, App Services) |
+| **Operations & Reliability** | Incident & Problem Management · ITIL · On-call · RCA · SLA/SLO |
+| **Monitoring & Observability** | Azure Monitor · Log Analytics (KQL) · CloudWatch · Alerting · Runbooks |
+| **Automation** | Python · PowerShell · Bash · ARM Templates · Terraform (basics) |
+| **Infrastructure** | Linux · Windows Server · Virtualisation · DNS · NSG · VPN |
+| **Delivery & Leadership** | Agile/Scrum · Project Management · Cross-functional Team Coordination |
+
+---
+
+## 🏅 Certifications
+
+- ☁️ **AWS Certified Cloud Practitioner** — Amazon Web Services (2024)
+- 🔵 **AZ-900** Microsoft Azure Fundamentals — Microsoft (2023)
+- 🔵 **AZ-104** Microsoft Azure Administrator — *In Progress 2026*
+- ⚙️ **ITIL Foundation** — AXELOS
+- 🏃 **PSM I** Professional Scrum Master — Scrum.org (2023)
+- 📦 **PSPO I** Professional Scrum Product Owner — Scrum.org (2025)
+- 📋 **CAPM** — Project Management Institute
+- 🐧 **Linux Essentials** — Linux Professional Institute
+- 🧩 **Management 3.0 Foundation**
+
+---
+
+## 📁 Featured Projects
+
+| Project | Description | Stack |
+|---|---|---|
+| [☁️ AWS Examples & Labs](https://github.com/gonzalezluizpro/AWS-Examples) | AWS certification labs — EC2, S3, VPC, IAM, CloudWatch, Lambda | HCL · Terraform · AWS CLI |
+| [🔐 Cybersecurity Project](https://github.com/gonzalezluizpro/dlh-cybersecurity-project) | Digital Learning Hub — security fundamentals and Python tooling | Python |
+| [🤖 CV Matcher (AI/ML)](https://github.com/gonzalezluizpro/cv-matcher) | AI-powered CV matching engine — ML relevance scoring | Python · FastAPI · Next.js |
+| 📊 Azure Monitoring Setup *(coming soon)* | Terraform + Azure Monitor + KQL queries + Alerting for production ops | Azure · Terraform · KQL |
+| 📋 Incident Runbook Templates *(coming soon)* | Production P1/P2 runbooks, RCA templates, on-call guides from real financial ops | Markdown · ITIL |
+
+---
+
+## 💼 Experience
+
+**Senior Technical Operations Engineer** — BEAM Luxembourg *(Apr 2025 – Jan 2026)*
+> Stabilised cloud-hosted financial systems · Improved monitoring and service reliability · Led incident response and RCA processes
+
+**Feature Engineer / Platform Operations** — ING Luxembourg *(Feb 2023 – Dec 2024)*
+> Coordinated technical delivery across multiple teams in a regulated banking environment · Improved platform reliability and operational readiness
+
+**IT Project Manager / Infrastructure Operations** — Sword Group *(Jan 2021 – Jan 2023)*
+> Delivered infrastructure modernisation for European institutions · Managed cross-border teams · Reduced recurring incidents via monitoring improvements
+
+**Senior Support Engineer** — i2S Insurance Knowledge · Portugal *(2017 – 2020)*
+> Production support for banking/insurance platforms
