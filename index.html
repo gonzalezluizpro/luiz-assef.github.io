@@ -1,393 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luiz Assef - Cloud Engineer & DevOps</title>
-    <style>
-        :root {
-            --primary-color: #2a4365;
-            --secondary-color: #3182ce;
-            --accent-color: #f6ad55;
-            --text-color: #2d3748;
-            --light-bg: #f7fafc;
-            --success-color: #48bb78;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Luiz Assef – Senior Cloud Operations Engineer | Azure AWS | Relocating to Australia" />
+  <title>Luiz Assef | Cloud Operations Engineer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.7; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', system-ui, sans-serif;
-        }
+    header {
+      background: linear-gradient(135deg, #161b22 0%, #1f2937 100%);
+      padding: 60px 20px 50px;
+      text-align: center;
+      border-bottom: 1px solid #21262d;
+    }
+    header h1 { font-size: 2.6rem; font-weight: 700; color: #ffffff; }
+    header h2 { font-size: 1.15rem; font-weight: 400; color: #8b949e; margin-top: 8px; }
+    .badge-row { margin-top: 18px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .badge {
+      background: #21262d; border: 1px solid #30363d;
+      padding: 5px 14px; border-radius: 20px; font-size: 0.82rem; color: #58a6ff;
+    }
+    .badge.green { color: #3fb950; border-color: #238636; }
+    .cta-buttons { margin-top: 24px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      padding: 10px 22px; border-radius: 8px; font-size: 0.92rem; font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.85; text-decoration: none; }
+    .btn-primary { background: #238636; color: #fff; }
+    .btn-secondary { background: #21262d; color: #58a6ff; border: 1px solid #30363d; }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    section { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
+    section h3 { font-size: 1.35rem; font-weight: 700; color: #f0f6fc; border-bottom: 1px solid #21262d; padding-bottom: 10px; margin-bottom: 24px; }
 
-        body {
-            color: var(--text-color);
-            line-height: 1.6;
-        }
+    .about-text { color: #8b949e; font-size: 1rem; }
+    .about-text strong { color: #e6edf3; }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+    .skill-card {
+      background: #161b22; border: 1px solid #21262d;
+      border-radius: 10px; padding: 16px 18px;
+    }
+    .skill-card h4 { font-size: 0.82rem; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+    .skill-card p { font-size: 0.88rem; color: #8b949e; }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 6rem 0;
-            text-align: center;
-        }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .project-card {
+      background: #161b22; border: 1px solid #21262d;
+      border-radius: 10px; padding: 20px; transition: border-color 0.2s;
+    }
+    .project-card:hover { border-color: #58a6ff; }
+    .project-card h4 { font-size: 1rem; color: #f0f6fc; margin-bottom: 8px; }
+    .project-card p { font-size: 0.87rem; color: #8b949e; margin-bottom: 14px; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { font-size: 0.75rem; background: #21262d; color: #8b949e; padding: 2px 9px; border-radius: 12px; }
 
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
+    .timeline { border-left: 2px solid #21262d; padding-left: 24px; }
+    .timeline-item { margin-bottom: 28px; position: relative; }
+    .timeline-item::before {
+      content: ''; width: 10px; height: 10px; background: #58a6ff;
+      border-radius: 50%; position: absolute; left: -30px; top: 5px;
+    }
+    .timeline-item h4 { font-size: 1rem; color: #f0f6fc; }
+    .timeline-item span { font-size: 0.82rem; color: #3fb950; }
+    .timeline-item p { font-size: 0.88rem; color: #8b949e; margin-top: 5px; }
 
-        .hero p {
-            font-size: 1.25rem;
-            opacity: 0.9;
-        }
+    .certs-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+    .cert-badge {
+      background: #161b22; border: 1px solid #21262d;
+      border-radius: 8px; padding: 10px 16px; font-size: 0.87rem; color: #e6edf3;
+    }
+    .cert-badge .cert-org { font-size: 0.75rem; color: #8b949e; display: block; margin-top: 3px; }
 
-        /* Stats Section */
-        .stats {
-            background: var(--light-bg);
-            padding: 4rem 0;
-        }
+    .contact-box {
+      background: #161b22; border: 1px solid #21262d;
+      border-radius: 12px; padding: 30px; text-align: center;
+    }
+    .contact-box p { color: #8b949e; margin-bottom: 20px; }
+    .contact-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .contact-link {
+      background: #21262d; border: 1px solid #30363d;
+      padding: 10px 20px; border-radius: 8px; font-size: 0.9rem; color: #58a6ff;
+    }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .stat-item {
-            padding: 1.5rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            color: var(--secondary-color);
-            font-weight: bold;
-        }
-
-        /* Services Section */
-        .services {
-            padding: 4rem 0;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .service-card {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-
-        /* Case Studies */
-        .case-studies {
-            background: var(--light-bg);
-            padding: 4rem 0;
-        }
-
-        .case-study {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .case-study h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        /* Certifications */
-        .certifications {
-            padding: 4rem 0;
-        }
-
-        .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .cert-item {
-            background: var(--light-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: var(--primary-color);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: var(--primary-color);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: var(--accent-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #e69b3f;
-        }
-
-        /* Back to Top Button */
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--secondary-color);
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            z-index: 1000;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-        }
-
-        .back-to-top:hover {
-            background: var(--primary-color);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .container {
-                padding: 0 1rem;
-            }
-            
-            .stats-grid, .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .back-to-top {
-                bottom: 10px;
-                right: 10px;
-            }
-        }
-    </style>
+    footer {
+      text-align: center; padding: 24px;
+      color: #8b949e; font-size: 0.82rem;
+      border-top: 1px solid #21262d; margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <section class="hero" id="top">
-        <div class="container">
-            <h1>Luiz Assef</h1>
-            <p>Cloud Engineer | DevOps | Solutions Architect in Progress</p>
-            <p style="margin-top: 1rem">Building scalable, automated, and secure cloud solutions with AWS, Azure, and Terraform</p>
-            <a href="#contact" class="btn" style="margin-top: 2rem">View My Projects</a>
-        </div>
-    </section>
 
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">16+</div>
-                    <div>Years Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">10+</div>
-                    <div>Cloud Projects</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">3</div>
-                    <div>Languages</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">5+</div>
-                    <div>Certifications</div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HEADER -->
+<header>
+  <h1>Luiz Assef</h1>
+  <h2>Senior Cloud & IT Operations Engineer | Azure · AWS | Financial Services</h2>
+  <div class="badge-row">
+    <span class="badge">📍 Luxembourg → 🇦🇺 Relocating to Australia</span>
+    <span class="badge green">✅ Open to Sponsorship (482 / 186)</span>
+    <span class="badge">15+ Years Experience</span>
+    <span class="badge">EU Citizen</span>
+  </div>
+  <div class="cta-buttons">
+    <a href="https://www.linkedin.com/in/luizgonzalezpro/" class="btn btn-primary" target="_blank">LinkedIn Profile</a>
+    <a href="mailto:gonzalezluizpro@gmail.com" class="btn btn-secondary">Contact Me</a>
+    <a href="https://github.com/gonzalezluizpro" class="btn btn-secondary" target="_blank">GitHub Repos</a>
+  </div>
+</header>
 
-    <section class="services">
-        <div class="container">
-            <h2 class="section-title">Cloud & DevOps Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">☁️</div>
-                    <h3>Cloud Architecture</h3>
-                    <p>Designing scalable solutions on AWS and Azure to meet business needs with security and efficiency.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">⚙️</div>
-                    <h3>DevOps Automation</h3>
-                    <p>Building CI/CD pipelines with GitHub Actions, Jenkins, and Azure DevOps for faster delivery.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛠️</div>
-                    <h3>Infrastructure as Code</h3>
-                    <p>Automating infrastructure with Terraform and CloudFormation to reduce manual errors.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔒</div>
-                    <h3>Cloud Security</h3>
-                    <p>Implementing IAM, RBAC, and compliance frameworks to ensure secure cloud environments.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ABOUT -->
+<section>
+  <h3>👋 About Me</h3>
+  <p class="about-text">
+    Senior Cloud & IT Operations Engineer with <strong>15+ years</strong> supporting mission-critical systems in 
+    <strong>regulated financial environments</strong> across Europe and Latin America. 
+    Specialised in <strong>cloud operations (AWS & Azure)</strong>, production support, service reliability, 
+    incident management (ITIL), and cross-team technical delivery.<br><br>
+    Most recently at <strong>BEAM Luxembourg</strong> (financial cloud systems) and <strong>ING Luxembourg</strong> 
+    (Technical Delivery & Platform Operations in a regulated banking environment). 
+    Currently based in <strong>Luxembourg</strong>, actively relocating to <strong>Australia</strong> and 
+    open to employer sponsorship (Subclass 482 / 186).
+  </p>
+</section>
 
-    <section class="case-studies">
-        <div class="container">
-            <h2 class="section-title">Cloud Projects</h2>
-            
-            <div class="case-study">
-                <h3>AWS - Static Website Hosting</h3>
-                <p><strong>Challenge:</strong> Deploying a cost-effective static website with global availability.</p>
-                <p><strong>Solution:</strong> S3 + CloudFront distribution with HTTPS and Route53 integration.</p>
-                <p><strong>Result:</strong> Highly available, secure, and low-cost hosting solution.</p>
-            </div>
+<!-- SKILLS -->
+<section>
+  <h3>🛠️ Core Skills</h3>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h4>Cloud Platforms</h4>
+      <p>AWS (EC2, S3, CloudWatch, Lambda)<br>Microsoft Azure (VMs, Monitor, Log Analytics, App Services)</p>
+    </div>
+    <div class="skill-card">
+      <h4>Operations & Reliability</h4>
+      <p>Incident & Problem Management<br>ITIL, On-call Rotations, RCA, SLA/SLO Management</p>
+    </div>
+    <div class="skill-card">
+      <h4>Monitoring & Observability</h4>
+      <p>Azure Monitor, Log Analytics (KQL)<br>CloudWatch, Alerting, Dashboards, Runbooks</p>
+    </div>
+    <div class="skill-card">
+      <h4>Automation</h4>
+      <p>Python, PowerShell<br>Bash, ARM Templates, Terraform (basics)</p>
+    </div>
+    <div class="skill-card">
+      <h4>Infrastructure</h4>
+      <p>Linux, Windows Server<br>Virtualisation, Networking, DNS, VPNs, NSG</p>
+    </div>
+    <div class="skill-card">
+      <h4>Delivery & Leadership</h4>
+      <p>Agile/Scrum, Project Management<br>Cross-functional Team Coordination, Stakeholder Management</p>
+    </div>
+  </div>
+</section>
 
-            <div class="case-study">
-                <h3>Terraform - AWS Infrastructure</h3>
-                <p><strong>Challenge:</strong> Manual infrastructure provisioning leading to delays.</p>
-                <p><strong>Solution:</strong> Automated EC2, VPC, and IAM setup with Terraform.</p>
-                <p><strong>Result:</strong> Reproducible, version-controlled infrastructure in minutes.</p>
-            </div>
+<!-- PROJECTS -->
+<section>
+  <h3>📁 Featured Projects</h3>
+  <div class="projects-grid">
 
-            <div class="case-study">
-                <h3>Azure - Virtual Network & Security</h3>
-                <p><strong>Challenge:</strong> Setting up secure networking for a hybrid cloud environment.</p>
-                <p><strong>Solution:</strong> Configured Azure VNet with subnets, NSGs, and VPN gateway.</p>
-                <p><strong>Result:</strong> Secure and scalable hybrid connectivity.</p>
-            </div>
-        </div>
-    </section>
+    <a href="https://github.com/gonzalezluizpro/AWS-Examples" class="project-card" target="_blank">
+      <h4>☁️ AWS Examples & Labs</h4>
+      <p>AWS certification study labs — EC2, S3, VPC, IAM, CloudWatch, Lambda use cases with Terraform/HCL.</p>
+      <div class="project-tags">
+        <span class="tag">AWS</span><span class="tag">HCL</span><span class="tag">Terraform</span><span class="tag">Labs</span>
+      </div>
+    </a>
 
-    <section class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-item">
-                    <h3>AWS Certified</h3>
-                    <p>Cloud Practitioner (2024) | Solutions Architect (in progress)</p>
-                </div>
-                <div class="cert-item">
-                    <h3>Microsoft Certified</h3>
-                    <p>Azure Fundamentals (2023) | Azure Administrator (in progress)</p>
-                </div>
-                <div class="cert-item">
-                    <h3>Scrum.org</h3>
-                    <p>PSM I & PSPO I</p>
-                </div>
-                <div class="cert-item">
-                    <h3>Management 3.0</h3>
-                    <p>Foundation Certified</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <a href="https://github.com/gonzalezluizpro/dlh-cybersecurity-project" class="project-card" target="_blank">
+      <h4>🔐 Cybersecurity Academy Project</h4>
+      <p>Digital Learning Hub Cybersecurity Project — security fundamentals, threat modeling and Python tooling.</p>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">Security</span><span class="tag">Education</span>
+      </div>
+    </a>
 
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title" style="color: white;">Let’s Connect</h2>
-            <p>Available for freelance projects and cloud consulting</p>
-            <div class="contact-info">
-                <div>📧 <a href="mailto:gonzalezluizpro@gmail.com" style="color: inherit; text-decoration: none;">gonzalezluizpro@gmail.com</a></div>
-                <div>📍 Luxembourg</div>
-            </div>
-            <div style="margin-top: 2rem;">
-                <a href="https://linkedin.com/in/luizgonzalezpro" class="btn" target="_blank">Connect on LinkedIn</a>
-            </div>
-        </div>
-    </section>
+    <a href="https://github.com/gonzalezluizpro/cv-matcher" class="project-card" target="_blank">
+      <h4>🤖 CV Matcher (AI/ML)</h4>
+      <p>AI-powered CV matching engine using Python, FastAPI, Next.js and ML algorithms for job relevance scoring.</p>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Next.js</span><span class="tag">ML</span>
+      </div>
+    </a>
 
-    <!-- Back to Top Button -->
-    <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+    <a href="https://github.com/gonzalezluizpro/luiz-portfolio" class="project-card" target="_blank">
+      <h4>🌐 Portfolio App (TypeScript)</h4>
+      <p>Previous portfolio version built with TypeScript — component-driven, responsive design.</p>
+      <div class="project-tags">
+        <span class="tag">TypeScript</span><span class="tag">Frontend</span>
+      </div>
+    </a>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Luiz Assef. All rights reserved.</p>
-        </div>
-    </footer>
+    <div class="project-card">
+      <h4>📊 Azure Monitoring Setup <span style="color:#3fb950;font-size:0.75rem;margin-left:6px;">Coming Soon</span></h4>
+      <p>Terraform-based Azure Monitor setup: Log Analytics workspace, KQL queries, alerting and action groups for production ops.</p>
+      <div class="project-tags">
+        <span class="tag">Azure</span><span class="tag">Terraform</span><span class="tag">KQL</span><span class="tag">Monitor</span>
+      </div>
+    </div>
 
-    <!-- JavaScript for Back to Top button visibility -->
-    <script>
-        const backToTopButton = document.querySelector('.back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('visible');
-            } else {
-                backToTopButton.classList.remove('visible');
-            }
-        });
-    </script>
-</body>
-</html>
+    <div class="project-card">
+      <h4>📋 Incident Runbook Template <span style="color:#3fb950;font-size:0.75rem;margin-left:6px;">Coming Soon</span></h4>
+      <p>Production-grade P1/P2 runbooks, RCA templates, on-call guides and postmortem frameworks based on real financial ops.</p>
+      <div class="project-tags">
+        <span class="tag">ITIL</span><span class="tag">Ops</span><span class="tag">Runbook</span><span class="tag">Markdown</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+  <h3>💼 Experience</h3>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h4>Senior Technical Operations Engineer — BEAM Luxembourg</h4>
+      <span>Apr 2025 – Jan 2026 · Luxembourg</span>
+      <p>Stabilised mission-critical cloud systems in regulated financial environments. Led incident response, monitoring optimisation and service reliability improvements. Coordinated cross-team RCA processes.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Feature Engineer / Technical Delivery & Platform Ops — ING Luxembourg</h4>
+      <span>Feb 2023 – Dec 2024 · Luxembourg</span>
+      <p>Coordinated technical delivery across multiple engineering teams in a regulated banking environment. Improved platform reliability and operational readiness across cloud and infrastructure.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>IT Project Manager / Infrastructure Operations — Sword Group</h4>
+      <span>Jan 2021 – Jan 2023 · Luxembourg</span>
+      <p>Delivered infrastructure modernisation projects for European institutions. Managed cross-border teams and vendors. Implemented monitoring improvements reducing recurring incidents.</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Senior Support Engineer — i2S Insurance Knowledge</h4>
+      <span>2017 – 2020 · Portugal</span>
+      <p>Advanced production support for banking and insurance platforms. Automated operational processes using Python and PowerShell.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+  <h3>🏅 Certifications</h3>
+  <div class="certs-grid">
+    <div class="cert-badge">☁️ AWS Certified Cloud Practitioner<span class="cert-org">Amazon Web Services</span></div>
+    <div class="cert-badge">🔵 AZ-900 Azure Fundamentals<span class="cert-org">Microsoft</span></div>
+    <div class="cert-badge">🔵 AZ-104 Azure Administrator<span class="cert-org">In Progress · Microsoft</span></div>
+    <div class="cert-badge">⚙️ ITIL Foundation<span class="cert-org">AXELOS</span></div>
+    <div class="cert-badge">🏃 PSM I – Scrum Master<span class="cert-org">Scrum.org</span></div>
+    <div class="cert-badge">📦 PSPO I – Product Owner<span class="cert-org">Scrum.org</span></div>
+    <div class="cert-badge">📋 CAPM<span class="cert-org">Project Management Institute</span></div>
+    <div class="cert-bad
