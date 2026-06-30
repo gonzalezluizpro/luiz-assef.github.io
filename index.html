@@ -3,464 +3,200 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Luiz Assef – IT Technical Manager & Technical Account Manager | Azure · AWS · ITIL | Open to Canada & Europe" />
-  <title>Luiz Assef | IT Technical Manager & TAM</title>
+  <meta name="description" content="Luiz Assef – Senior Technology Operations & Cloud Professional transitioning to AI Product Management & MLOps | Azure · AWS · ITIL · IaC | Open to Europe & Canada" />
+  <title>Luiz Assef | Technology Operations, Cloud & AI Product</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Segoe UI', Arial, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.7; }
     a { color: #58a6ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
-
-    header {
-      background: linear-gradient(135deg, #161b22 0%, #1f2937 100%);
-      padding: 70px 20px 60px;
-      text-align: center;
-      border-bottom: 1px solid #21262d;
-    }
+    header { background: linear-gradient(135deg, #161b22 0%, #1f2937 100%); padding: 70px 20px 60px; text-align: center; border-bottom: 1px solid #21262d; }
     header h1 { font-size: 2.8rem; font-weight: 700; color: #ffffff; }
     header h2 { font-size: 1.2rem; font-weight: 400; color: #8b949e; margin-top: 10px; }
     .stack-row { margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-    .stack-pill {
-      background: #21262d; border: 1px solid #30363d;
-      padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; color: #58a6ff; font-weight: 600;
-    }
+    .stack-pill { background: #21262d; border: 1px solid #30363d; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; color: #58a6ff; font-weight: 600; }
     .stack-pill.green { color: #3fb950; border-color: #238636; background: #0d2318; }
     .stack-pill.orange { color: #e3b341; border-color: #9e6a03; background: #2d1e00; }
     .cta-buttons { margin-top: 28px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-    .btn {
-      padding: 11px 26px; border-radius: 8px; font-size: 0.95rem; font-weight: 600;
-      transition: opacity 0.2s;
-    }
+    .btn { padding: 11px 26px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; transition: opacity 0.2s; }
     .btn:hover { opacity: 0.82; text-decoration: none; }
     .btn-primary { background: #238636; color: #fff; }
     .btn-secondary { background: #21262d; color: #58a6ff; border: 1px solid #30363d; }
     .btn-orange { background: #9e6a03; color: #fff; }
-
     section { max-width: 860px; margin: 0 auto; padding: 52px 20px; }
-    section h3 {
-      font-size: 1.3rem; font-weight: 700; color: #f0f6fc;
-      border-bottom: 1px solid #21262d; padding-bottom: 10px; margin-bottom: 28px;
-    }
-
+    section h3 { font-size: 1.3rem; font-weight: 700; color: #f0f6fc; border-bottom: 1px solid #21262d; padding-bottom: 10px; margin-bottom: 28px; }
     .about-text { color: #8b949e; font-size: 1rem; }
     .about-text strong { color: #e6edf3; }
-
-    /* TARGET ROLES */
-    .roles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; margin-bottom: 28px; }
-    .role-card {
-      background: #161b22; border: 1px solid #21262d;
-      border-radius: 12px; padding: 22px;
-    }
+    .roles-grid, .projects-grid, .skills-grid, .highlights-grid { display: grid; gap: 18px; }
+    .roles-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin-bottom: 28px; }
+    .projects-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+    .skills-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    .highlights-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    .role-card, .project-card, .skill-card, .highlight-card, .contact-box { background: #161b22; border: 1px solid #21262d; border-radius: 12px; }
+    .role-card, .skill-card, .highlight-card { padding: 22px; }
     .role-card.primary { border-color: #238636; }
     .role-card.secondary { border-color: #1f6feb; }
-    .role-card h4 { font-size: 1.05rem; color: #f0f6fc; margin-bottom: 8px; }
-    .role-card p { font-size: 0.87rem; color: #8b949e; line-height: 1.6; }
+    .role-card h4, .project-card h4 { font-size: 1.05rem; color: #f0f6fc; margin-bottom: 8px; }
+    .role-card p, .project-card p, .skill-card p, .timeline-item p { font-size: 0.87rem; color: #8b949e; line-height: 1.6; }
     .role-card ul { font-size: 0.87rem; color: #8b949e; line-height: 1.8; padding-left: 18px; }
-
-    /* PROJECTS */
-    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
-    .project-card {
-      background: #161b22; border: 1px solid #21262d;
-      border-radius: 12px; padding: 22px; transition: border-color 0.2s;
-      display: block; color: inherit;
-    }
+    .project-card { padding: 22px; transition: border-color 0.2s; display: block; color: inherit; }
     .project-card:hover { border-color: #58a6ff; text-decoration: none; }
     .project-card.featured { border-color: #238636; }
-    .project-card h4 { font-size: 1rem; color: #f0f6fc; margin-bottom: 8px; }
-    .project-card p { font-size: 0.87rem; color: #8b949e; margin-bottom: 16px; line-height: 1.6; }
     .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tag { font-size: 0.75rem; background: #21262d; color: #8b949e; padding: 3px 10px; border-radius: 12px; }
     .tag.green { color: #3fb950; background: #0d2318; }
     .tag.blue { color: #58a6ff; background: #0c2a4a; }
-
-    /* SKILLS */
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
-    .skill-card {
-      background: #161b22; border: 1px solid #21262d;
-      border-radius: 10px; padding: 16px 18px;
-    }
     .skill-card h4 { font-size: 0.78rem; color: #58a6ff; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
-    .skill-card p { font-size: 0.87rem; color: #8b949e; }
-
-    /* HIGHLIGHTS */
-    .highlights-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
-    .highlight-card {
-      background: #161b22; border: 1px solid #21262d;
-      border-radius: 10px; padding: 18px;
-      text-align: center;
-    }
     .highlight-number { font-size: 2rem; font-weight: 700; color: #3fb950; }
-    .highlight-label { font-size: 0.85rem; color: #8b949e; margin-top: 4px; }
-
-    /* EXPERIENCE */
+    .highlight-label { font-size: 0.85rem; color: #8b949e; margin-top: 4px; text-align: center; }
     .timeline { border-left: 2px solid #21262d; padding-left: 26px; }
     .timeline-item { margin-bottom: 28px; position: relative; }
-    .timeline-item::before {
-      content: ''; width: 10px; height: 10px; background: #58a6ff;
-      border-radius: 50%; position: absolute; left: -31px; top: 6px;
-    }
+    .timeline-item::before { content: ''; width: 10px; height: 10px; background: #58a6ff; border-radius: 50%; position: absolute; left: -31px; top: 6px; }
     .timeline-item h4 { font-size: 1rem; color: #f0f6fc; }
     .timeline-item span { font-size: 0.82rem; color: #3fb950; }
-    .timeline-item p { font-size: 0.87rem; color: #8b949e; margin-top: 5px; }
-
-    /* CERTS */
     .certs-grid { display: flex; flex-wrap: wrap; gap: 12px; }
-    .cert-badge {
-      background: #161b22; border: 1px solid #21262d;
-      border-radius: 8px; padding: 10px 16px; font-size: 0.87rem; color: #e6edf3;
-    }
+    .cert-badge { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 10px 16px; font-size: 0.87rem; color: #e6edf3; }
     .cert-org { font-size: 0.75rem; color: #8b949e; display: block; margin-top: 3px; }
-
-    /* CONTACT */
-    .contact-box {
-      background: #161b22; border: 1px solid #21262d;
-      border-radius: 14px; padding: 36px; text-align: center;
-    }
+    .contact-box { padding: 36px; text-align: center; }
     .contact-box h4 { font-size: 1.3rem; color: #f0f6fc; margin-bottom: 10px; }
     .contact-box p { color: #8b949e; margin-bottom: 24px; font-size: 0.97rem; }
     .contact-links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-    .contact-link {
-      background: #21262d; border: 1px solid #30363d;
-      padding: 11px 22px; border-radius: 8px; font-size: 0.9rem; color: #58a6ff;
-      transition: border-color 0.2s;
-    }
+    .contact-link { background: #21262d; border: 1px solid #30363d; padding: 11px 22px; border-radius: 8px; font-size: 0.9rem; color: #58a6ff; transition: border-color 0.2s; }
     .contact-link:hover { border-color: #58a6ff; text-decoration: none; }
-
-    footer {
-      text-align: center; padding: 26px;
-      color: #8b949e; font-size: 0.82rem;
-      border-top: 1px solid #21262d; margin-top: 40px;
-    }
+    footer { text-align: center; padding: 26px; color: #8b949e; font-size: 0.82rem; border-top: 1px solid #21262d; margin-top: 40px; }
+    @media (max-width: 700px) { header h1 { font-size: 2.2rem; } section { padding: 42px 16px; } }
   </style>
 </head>
 <body>
-
-<!-- ══════════════════════════════════════════
-     HEADER
-══════════════════════════════════════════ -->
 <header>
   <h1>Luiz Assef</h1>
-  <h2>IT Technical Manager &amp; Technical Account Manager</h2>
+  <h2>Senior Technology Operations &amp; Cloud Professional transitioning to AI Product Management &amp; MLOps</h2>
   <div class="stack-row">
     <span class="stack-pill">🔵 Microsoft Azure</span>
     <span class="stack-pill">☁️ AWS Certified</span>
     <span class="stack-pill">⚙️ ITIL · Infrastructure</span>
+    <span class="stack-pill">🤖 AI Product · MLOps</span>
     <span class="stack-pill">🏦 Banking · FinTech</span>
     <span class="stack-pill">📋 MBA · CAPM · Scrum</span>
     <span class="stack-pill orange">🍁 Open to Canada</span>
     <span class="stack-pill green">🌍 Open to Europe</span>
   </div>
   <div class="cta-buttons">
-    <a href="https://www.linkedin.com/in/luizgonzalezpro/" class="btn btn-primary" target="_blank">💼 LinkedIn</a>
-    <a href="https://github.com/gonzalezluizpro" class="btn btn-secondary" target="_blank">🐙 GitHub</a>
+    <a href="https://www.linkedin.com/in/luizgonzalezpro/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+    <a href="https://github.com/gonzalezluizpro" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
     <a href="mailto:gonzalezluizpro@gmail.com" class="btn btn-orange">✉️ Contact Me</a>
   </div>
 </header>
-
-<!-- ══════════════════════════════════════════
-     ABOUT
-══════════════════════════════════════════ -->
 <section>
   <h3>👋 About Me</h3>
   <p class="about-text">
-    IT Technical Manager and Technical Account Manager with <strong>16+ years</strong> of enterprise cloud and infrastructure experience
-    across major financial institutions in Europe and Latin America.<br><br>
-    Deep expertise in <strong>Microsoft Azure</strong>, <strong>Windows Server infrastructure transformation</strong>,
-    <strong>ITIL service management</strong> and <strong>DORA compliance</strong> — with a proven track record at
-    <strong>ING Luxembourg</strong>, <strong>BNP Paribas</strong>, the <strong>European Investment Bank</strong>
-    and the <strong>Rio 2016 Olympic Games (Atos)</strong>.<br><br>
-    MBA in Project Management &amp; Agile · AWS Certified · AZ-104 in progress · ITIL Foundation · CAPM · PSM I · PSPO I<br><br>
-    <strong>EU Citizen (Portuguese passport) · English C1 · French B2 · Portuguese native</strong><br>
-    Eligible to work in Canada via Global Talent Stream · Available immediately.
+    Senior Technology Operations and Cloud professional with <strong>16+ years</strong> of experience supporting mission-critical environments across banking, financial services, EU institutions, and international organisations in Luxembourg, Portugal, and Brazil.<br><br>
+    I bridge infrastructure, operations, and business outcomes through <strong>cloud reliability</strong>, <strong>operational resilience</strong>, <strong>stakeholder coordination</strong>, and <strong>service delivery</strong>.<br><br>
+    Currently deepening my focus in <strong>AI Product Management</strong> and <strong>MLOps</strong>, with interest in sovereign and hybrid AI architectures, responsible AI deployment, model operations, and connecting legacy systems with modern AI capabilities in regulated environments.<br><br>
+    <strong>English C1 · French B2 · Portuguese native</strong> · EU Citizen (Portuguese passport) · Available immediately.
   </p>
 </section>
-
-<!-- ══════════════════════════════════════════
-     TARGET ROLES
-══════════════════════════════════════════ -->
 <section>
   <h3>🎯 Target Roles</h3>
   <div class="roles-grid">
     <div class="role-card primary">
-      <h4>🏢 IT Technical Manager</h4>
-      <p>Leading infrastructure transformation, Azure estates and Windows environments — hands-on + managerial split. Ideal for regulated sectors: finance, government, enterprise.</p>
-      <ul>
-        <li>Azure &amp; M365 Administration</li>
-        <li>Infrastructure Transformation</li>
-        <li>Security &amp; Compliance (ISO 27001)</li>
-        <li>Vendor &amp; SLA Management</li>
-        <li>IaC: Terraform &amp; Ansible</li>
-      </ul>
+      <h4>🎯 Technical AI Product Manager (AI Platform PM)</h4>
+      <p>Defining AI platform roadmaps, translating technical capabilities into product outcomes, and bridging engineering, operations, and business stakeholders.</p>
+      <ul><li>AI Platform Roadmap &amp; Backlog</li><li>Technical Product Specifications</li><li>Model Ops &amp; Platform Governance</li><li>Stakeholder &amp; Vendor Alignment</li><li>Regulated / Enterprise Environments</li></ul>
     </div>
     <div class="role-card secondary">
-      <h4>🤝 Technical Account Manager</h4>
-      <p>Acting as trusted technical advisor for enterprise clients — owning issues end-to-end, presenting solutions to C-suite, and building long-term client relationships in cloud &amp; IT services.</p>
-      <ul>
-        <li>Enterprise Client Management</li>
-        <li>Cloud Advisory (AWS &amp; Azure)</li>
-        <li>Incident Ownership &amp; SLA</li>
-        <li>Stakeholder Communication</li>
-        <li>Payments &amp; Banking Domain</li>
-      </ul>
+      <h4>🤖 AI Product Manager / MLOps Product Owner</h4>
+      <p>Owning the ML lifecycle from experimentation to production — deployment pipelines, operational governance, and reliable AI service delivery.</p>
+      <ul><li>MLOps Pipelines &amp; CI/CD</li><li>Model Lifecycle Management</li><li>PSPO · Agile Product Ownership</li><li>Responsible AI &amp; Observability</li><li>Legacy-to-AI Integration</li></ul>
+    </div>
+    <div class="role-card">
+      <h4>☁️ Senior Cloud Platform Engineer (AI Operations)</h4>
+      <p>Building and operating cloud platforms that support AI workloads — reliability, automation, and hybrid infrastructure at scale.</p>
+      <ul><li>Azure &amp; AWS Platform Operations</li><li>AI Workload Reliability</li><li>IaC: Terraform &amp; Ansible</li><li>Monitoring · Runbooks · RCA</li><li>Security &amp; Compliance (DORA · GDPR)</li></ul>
+    </div>
+    <div class="role-card">
+      <h4>🏛️ Product Manager — AI Infrastructure / Sovereign AI</h4>
+      <p>Shaping product strategy for sovereign and hybrid AI architectures in regulated markets, connecting legacy systems with modern AI capabilities.</p>
+      <ul><li>Sovereign AI Strategy</li><li>Hybrid AI Architecture</li><li>EU / Regulated Market Focus</li><li>Compliance &amp; Data Residency</li><li>Banking · FinTech · Public Sector</li></ul>
     </div>
   </div>
-  <p style="color:#8b949e; font-size:0.9rem; text-align:center;">
-    📍 Open to: <strong style="color:#e3b341;">Toronto · Ottawa · Calgary · Vancouver · Quebec City</strong> &nbsp;|&nbsp;
-    <strong style="color:#58a6ff;">London · Brussels · Amsterdam · Frankfurt · Geneva</strong>
-  </p>
+  <p style="color:#8b949e; font-size:0.9rem; text-align:center;">📍 Open to: <strong style="color:#e3b341;">Toronto · Ottawa · Calgary · Vancouver · Quebec City</strong> | <strong style="color:#58a6ff;">London · Brussels · Amsterdam · Frankfurt · Geneva</strong></p>
 </section>
-
-<!-- ══════════════════════════════════════════
-     KEY ACHIEVEMENTS
-══════════════════════════════════════════ -->
 <section>
   <h3>📊 Key Achievements</h3>
   <div class="highlights-grid">
-    <div class="highlight-card">
-      <div class="highlight-number">16+</div>
-      <div class="highlight-label">Years IT Infrastructure & Cloud Experience</div>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-number">50%</div>
-      <div class="highlight-label">Incident Reduction at European Investment Bank</div>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-number">10</div>
-      <div class="highlight-label">Windows Server Environments Transformed (EIB)</div>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-number">€500B+</div>
-      <div class="highlight-label">AUM Supported — European Investment Bank</div>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-number">3</div>
-      <div class="highlight-label">Major Financial Institutions in Luxembourg</div>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-number">0</div>
-      <div class="highlight-label">Downtime at Rio 2016 Olympic Games (Atos)</div>
-    </div>
+    <div class="highlight-card"><div class="highlight-number">16+</div><div class="highlight-label">Years IT Infrastructure & Cloud Experience</div></div>
+    <div class="highlight-card"><div class="highlight-number">50%</div><div class="highlight-label">Incident Reduction at European Investment Bank</div></div>
+    <div class="highlight-card"><div class="highlight-number">10</div><div class="highlight-label">Windows Server Environments Transformed (EIB)</div></div>
+    <div class="highlight-card"><div class="highlight-number">€500B+</div><div class="highlight-label">AUM Supported — European Investment Bank</div></div>
+    <div class="highlight-card"><div class="highlight-number">3</div><div class="highlight-label">Major Financial Institutions in Luxembourg</div></div>
+    <div class="highlight-card"><div class="highlight-number">0</div><div class="highlight-label">Downtime at Rio 2016 Olympic Games (Atos)</div></div>
   </div>
 </section>
-
-<!-- ══════════════════════════════════════════
-     CORE SKILLS
-══════════════════════════════════════════ -->
 <section>
   <h3>🛠️ Core Skills</h3>
   <div class="skills-grid">
-    <div class="skill-card">
-      <h4>Cloud Platforms</h4>
-      <p>Microsoft Azure (AZ-104 in progress)<br>AWS (Cloud Practitioner certified)<br>Azure DevOps · Azure Monitor</p>
-    </div>
-    <div class="skill-card">
-      <h4>Windows Infrastructure</h4>
-      <p>Windows Server 2008–2022<br>Active Directory · Azure AD<br>GPO · DNS · IIS · BitLocker</p>
-    </div>
-    <div class="skill-card">
-      <h4>Security &amp; Compliance</h4>
-      <p>DORA Compliance (ING Luxembourg)<br>ISO 27001-aligned practices<br>IAM · Encryption · Build Hardening</p>
-    </div>
-    <div class="skill-card">
-      <h4>IaC &amp; Automation</h4>
-      <p>Terraform · Ansible<br>PowerShell · Python<br>Docker · Kubernetes · CI/CD</p>
-    </div>
-    <div class="skill-card">
-      <h4>ITSM &amp; Service Management</h4>
-      <p>ITIL Foundation (certified)<br>ServiceNow · BMC Remedy<br>Incident · Problem · Change</p>
-    </div>
-    <div class="skill-card">
-      <h4>Monitoring &amp; Observability</h4>
-      <p>Grafana · Nagios · Azure Monitor<br>Production alerting &amp; runbooks<br>50% incident reduction at EIB</p>
-    </div>
-    <div class="skill-card">
-      <h4>Client &amp; Account Management</h4>
-      <p>Technical Account Management<br>Stakeholder Communication<br>SLA Governance · Vendor Mgmt</p>
-    </div>
-    <div class="skill-card">
-      <h4>Project &amp; Agile</h4>
-      <p>MBA · CAPM · PSM I · PSPO I<br>Scrum · Kanban · JIRA<br>Infrastructure transformation delivery</p>
-    </div>
+    <div class="skill-card"><h4>Cloud Platforms</h4><p>Microsoft Azure (AZ-104 in progress)<br>AWS (Cloud Practitioner certified)<br>Azure DevOps · Azure Monitor</p></div>
+    <div class="skill-card"><h4>Windows Infrastructure</h4><p>Windows Server 2008–2022<br>Active Directory · Azure AD<br>GPO · DNS · IIS · BitLocker</p></div>
+    <div class="skill-card"><h4>Security &amp; Compliance</h4><p>DORA compliance · GDPR-aware operations<br>ISO 27001-aligned practices<br>IAM · Encryption · Hardening</p></div>
+    <div class="skill-card"><h4>IaC &amp; Automation</h4><p>Terraform · Ansible<br>PowerShell · Python<br>Docker · Kubernetes · CI/CD</p></div>
+    <div class="skill-card"><h4>ITSM &amp; Service Management</h4><p>ITIL Foundation<br>ServiceNow · BMC Remedy<br>Incident · Problem · Change</p></div>
+    <div class="skill-card"><h4>Monitoring &amp; Observability</h4><p>Grafana · Nagios · Azure Monitor<br>Alerting · Runbooks · RCA</p></div>
+    <div class="skill-card"><h4>Client &amp; Account Management</h4><p>Technical Account Management<br>Stakeholder Communication<br>SLA Governance · Vendor Mgmt</p></div>
+    <div class="skill-card"><h4>Project &amp; Agile</h4><p>MBA · CAPM · PSM I · PSPO I<br>Scrum · Kanban · JIRA<br>Transformation delivery</p></div>
   </div>
 </section>
-
-<!-- ══════════════════════════════════════════
-     FEATURED PROJECTS
-══════════════════════════════════════════ -->
 <section>
   <h3>🚀 Technical Portfolio</h3>
   <div class="projects-grid">
-
-    <a href="https://github.com/gonzalezluizpro/terraform-azure-production-like" class="project-card featured" target="_blank">
-      <h4>🏗️ Azure Production Infrastructure (IaC)</h4>
-      <p>Full Azure environment deployed with Terraform: Virtual Network, Subnet, NSG with least-privilege rules, Linux VM (Ubuntu 22.04) and Static Public IP. Modular variables, tags and outputs — production-grade setup.</p>
-      <div class="project-tags">
-        <span class="tag green">⭐ Featured</span>
-        <span class="tag">Terraform</span>
-        <span class="tag">Azure</span>
-        <span class="tag">VNet · NSG</span>
-        <span class="tag">Linux VM</span>
-      </div>
-    </a>
-
-    <a href="https://github.com/gonzalezluizpro/terraform-associate-labs" class="project-card" target="_blank">
-      <h4>⚙️ Azure IaC Labs — State &amp; Modules</h4>
-      <p>Structured labs covering Terraform state management, modules, workspaces, provisioners and Azure/AWS provider configurations. Demonstrates IaC discipline for IT Manager environments.</p>
-      <div class="project-tags">
-        <span class="tag">Terraform</span>
-        <span class="tag">HCL</span>
-        <span class="tag">Modules</span>
-        <span class="tag">State Mgmt</span>
-      </div>
-    </a>
-
-    <a href="https://github.com/gonzalezluizpro/AWS-Examples" class="project-card" target="_blank">
-      <h4>☁️ AWS Multi-Cloud Examples</h4>
-      <p>AWS labs covering EC2, S3, VPC, IAM, CloudWatch and Lambda — structured with Terraform/HCL for multi-cloud consistency. Supports AWS Certified Cloud Practitioner (2024) credential.</p>
-      <div class="project-tags">
-        <span class="tag blue">AWS Certified 2024</span>
-        <span class="tag">EC2 · S3 · VPC</span>
-        <span class="tag">IAM</span>
-        <span class="tag">CloudWatch</span>
-      </div>
-    </a>
-
+    <a href="https://github.com/gonzalezluizpro/terraform-azure-production-like" class="project-card featured" target="_blank" rel="noopener noreferrer"><h4>🏗️ Azure Production Infrastructure (IaC)</h4><p>Production-style Azure environment deployed with Terraform, including VNet, Subnet, NSG, Linux VM, static IP, variables, tags, and outputs.</p><div class="project-tags"><span class="tag green">⭐ Featured</span><span class="tag">Terraform</span><span class="tag">Azure</span><span class="tag">Linux VM</span></div></a>
+    <a href="https://github.com/gonzalezluizpro/terraform-associate-labs" class="project-card" target="_blank" rel="noopener noreferrer"><h4>⚙️ Azure IaC Labs — State &amp; Modules</h4><p>Terraform labs covering state management, modules, workspaces, provisioners, and Azure/AWS provider configurations.</p><div class="project-tags"><span class="tag">Terraform</span><span class="tag">HCL</span><span class="tag">Modules</span><span class="tag">State Mgmt</span></div></a>
+    <a href="https://github.com/gonzalezluizpro/AWS-Examples" class="project-card" target="_blank" rel="noopener noreferrer"><h4>☁️ AWS Multi-Cloud Examples</h4><p>AWS labs covering EC2, S3, VPC, IAM, CloudWatch, and Lambda with Terraform/HCL for multi-cloud consistency.</p><div class="project-tags"><span class="tag blue">AWS</span><span class="tag">EC2 · S3 · VPC</span><span class="tag">IAM</span><span class="tag">CloudWatch</span></div></a>
   </div>
 </section>
-
-<!-- ══════════════════════════════════════════
-     EXPERIENCE
-══════════════════════════════════════════ -->
 <section>
   <h3>💼 Experience</h3>
   <div class="timeline">
-
-    <div class="timeline-item">
-      <h4>Senior Cloud Operations Engineer — BEAM Managed IT Solutions</h4>
-      <span>Apr 2025 – Jan 2026 · Luxembourg</span>
-      <p>Primary technical point of contact for regulated banking clients across AWS and Azure. Owned incidents end-to-end — root cause analysis, remediation and stakeholder communication. Enforced security standards, patch management and compliance in a regulated financial environment.</p>
-    </div>
-
-    <div class="timeline-item">
-      <h4>Senior Platform Operations Engineer — ING Luxembourg</h4>
-      <span>Feb 2023 – Dec 2024 · Luxembourg</span>
-      <p>Technical advisor to 10+ agile engineering squads in a fully Azure-based banking environment. Implemented DORA compliance (Digital Operational Resilience Act). Managed the Constellation / Bancomat ATM Shared Network — national payments infrastructure of Luxembourg.</p>
-    </div>
-
-    <div class="timeline-item">
-      <h4>Senior Infrastructure Engineer — European Investment Bank (Sword Group)</h4>
-      <span>Jan 2021 – Jan 2023 · Luxembourg</span>
-      <p>Led infrastructure transformation: upgraded 10 Windows Server environments (2016→2022) for the EIB (€500B+ AUM). Achieved 50% reduction in recurring incidents through Nagios/Grafana monitoring. Coordinated multi-country IT vendors and cross-functional teams.</p>
-    </div>
-
-    <div class="timeline-item">
-      <h4>Senior Application Support Engineer — i2S Insurance Knowledge</h4>
-      <span>Dec 2017 – Dec 2020 · Portugal</span>
-      <p>Delivered technical account support for Banco BPI across banking and insurance platforms. Managed Oracle, SQL Server, WildFly JBoss and WSO2 stacks. Automated operations with Python and PowerShell.</p>
-    </div>
-
-    <div class="timeline-item">
-      <h4>IT Infrastructure Administrator — Rio 2016 Olympic Games (Atos)</h4>
-      <span>Jun – Sep 2016 · Brazil</span>
-      <p>Administered IT infrastructure for one of the world's largest events. Supported international clients including Omega, Olympic Broadcast Services, Riedel and Panasonic in a zero-downtime, multi-client environment.</p>
-    </div>
-
+    <div class="timeline-item"><h4>Senior Cloud Operations Engineer — BEAM Managed IT Solutions</h4><span>Apr 2025 – Jan 2026 · Luxembourg</span><p>Primary technical point of contact for regulated banking clients across AWS and Azure. Owned incidents end-to-end with RCA, remediation, and stakeholder communication.</p></div>
+    <div class="timeline-item"><h4>Senior Platform Operations Engineer — ING Luxembourg</h4><span>Feb 2023 – Dec 2024 · Luxembourg</span><p>Technical advisor to 10+ agile engineering squads in a fully Azure-based banking environment. Implemented DORA compliance and supported national payments infrastructure.</p></div>
+    <div class="timeline-item"><h4>Senior Infrastructure Engineer — European Investment Bank (Sword Group)</h4><span>Jan 2021 – Jan 2023 · Luxembourg</span><p>Led infrastructure transformation for 10 Windows Server environments, reducing recurring incidents by 50% through monitoring and operational improvements.</p></div>
+    <div class="timeline-item"><h4>Senior Application Support Engineer — i2S Insurance Knowledge</h4><span>Dec 2017 – Dec 2020 · Portugal</span><p>Delivered technical account support across banking and insurance platforms and automated operations with Python and PowerShell.</p></div>
+    <div class="timeline-item"><h4>IT Infrastructure Administrator — Rio 2016 Olympic Games (Atos)</h4><span>Jun – Sep 2016 · Brazil</span><p>Supported IT infrastructure for one of the world's largest events in a zero-downtime, multi-client environment.</p></div>
   </div>
 </section>
-
-<!-- ══════════════════════════════════════════
-     CERTIFICATIONS
-══════════════════════════════════════════ -->
 <section>
   <h3>🏅 Certifications</h3>
   <div class="certs-grid">
-
-    <div class="cert-badge" style="border-color:#238636; background:#0d2318;">
-      🔵 AZ-104 Azure Administrator
-      <span class="cert-org" style="color:#3fb950;">⏳ In Progress · 2026 — Microsoft</span>
-    </div>
-
-    <div class="cert-badge">
-      ☁️ AWS Certified Cloud Practitioner
-      <span class="cert-org">Amazon Web Services · 2024</span>
-    </div>
-
-    <div class="cert-badge">
-      🔵 AZ-900 Azure Fundamentals
-      <span class="cert-org">Microsoft · 2023</span>
-    </div>
-
-    <div class="cert-badge">
-      🔄 Professional Scrum Master I (PSM I)
-      <span class="cert-org">Scrum.org · 2023</span>
-    </div>
-
-    <div class="cert-badge">
-      📦 Professional Scrum Product Owner I (PSPO I)
-      <span class="cert-org">Scrum.org · 2023</span>
-    </div>
-
-    <div class="cert-badge">
-      📋 CAPM – Certified Associate in Project Management
-      <span class="cert-org">Project Management Institute · 2021</span>
-    </div>
-
-    <div class="cert-badge">
-      🐧 Linux Essentials
-      <span class="cert-org">Linux Professional Institute · 2019</span>
-    </div>
-
-    <div class="cert-badge">
-      ⚙️ ITIL Foundation
-      <span class="cert-org">AXELOS · 2015</span>
-    </div>
-
+    <div class="cert-badge" style="border-color:#238636; background:#0d2318;">🔵 AZ-104 Azure Administrator<span class="cert-org" style="color:#3fb950;">⏳ In Progress · 2026 — Microsoft</span></div>
+    <div class="cert-badge">☁️ AWS Certified Cloud Practitioner<span class="cert-org">Amazon Web Services · 2024</span></div>
+    <div class="cert-badge">🔵 AZ-900 Azure Fundamentals<span class="cert-org">Microsoft · 2023</span></div>
+    <div class="cert-badge">🔄 Professional Scrum Master I (PSM I)<span class="cert-org">Scrum.org · 2023</span></div>
+    <div class="cert-badge">📦 Professional Scrum Product Owner I (PSPO I)<span class="cert-org">Scrum.org · 2023</span></div>
+    <div class="cert-badge">📋 CAPM – Certified Associate in Project Management<span class="cert-org">PMI · 2021</span></div>
+    <div class="cert-badge">🐧 Linux Essentials<span class="cert-org">LPI · 2019</span></div>
+    <div class="cert-badge">⚙️ ITIL Foundation<span class="cert-org">AXELOS · 2015</span></div>
   </div>
 </section>
-
-<!-- ══════════════════════════════════════════
-     EDUCATION
-══════════════════════════════════════════ -->
 <section>
   <h3>🎓 Education</h3>
   <div class="timeline">
-    <div class="timeline-item">
-      <h4>MBA – Project Management &amp; Agile Methodologies</h4>
-      <span>2022 – 2024 · PUC-RS, Brazil</span>
-      <p>Pontifícia Universidade Católica do Rio Grande do Sul</p>
-    </div>
-    <div class="timeline-item">
-      <h4>Bachelor's Degree – Information Technology Management</h4>
-      <span>2017 – 2021 · Estácio University, Brazil</span>
-      <p>Computer/Information Technology Administration and Management</p>
-    </div>
+    <div class="timeline-item"><h4>MBA – Project Management &amp; Agile Methodologies</h4><span>2022 – 2024 · PUC-RS, Brazil</span><p>Pontifícia Universidade Católica do Rio Grande do Sul</p></div>
+    <div class="timeline-item"><h4>Bachelor's Degree – Information Technology Management</h4><span>2017 – 2021 · Estácio University, Brazil</span><p>Computer/Information Technology Administration and Management</p></div>
   </div>
 </section>
-
-<!-- ══════════════════════════════════════════
-     CONTACT
-══════════════════════════════════════════ -->
 <section>
   <h3>📬 Let's Connect</h3>
   <div class="contact-box">
-    <h4>Open to IT Technical Manager &amp; TAM Roles</h4>
-    <p>
-      🍁 <strong style="color:#e3b341;">Canada:</strong> Toronto · Ottawa · Calgary · Vancouver · Quebec City<br>
-      🌍 <strong style="color:#58a6ff;">Europe:</strong> London · Brussels · Amsterdam · Frankfurt · Geneva<br><br>
-      EU Citizen (Portuguese passport) · Global Talent Stream eligible · Available immediately
-    </p>
+    <h4>Open to Technical AI PM, MLOps Product Owner, Cloud Platform &amp; AI Infrastructure Roles</h4>
+    <p>🍁 <strong style="color:#e3b341;">Canada:</strong> Toronto · Ottawa · Calgary · Vancouver · Quebec City<br>🌍 <strong style="color:#58a6ff;">Europe:</strong> London · Brussels · Amsterdam · Frankfurt · Geneva<br><br>EU Citizen (Portuguese passport) · English C1 · French B2 · Available immediately</p>
     <div class="contact-links">
-      <a href="https://www.linkedin.com/in/luizgonzalezpro/" class="contact-link" target="_blank">💼 LinkedIn</a>
+      <a href="https://www.linkedin.com/in/luizgonzalezpro/" class="contact-link" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
       <a href="mailto:gonzalezluizpro@gmail.com" class="contact-link">✉️ gonzalezluizpro@gmail.com</a>
-      <a href="https://github.com/gonzalezluizpro" class="contact-link" target="_blank">🐙 GitHub</a>
+      <a href="https://github.com/gonzalezluizpro" class="contact-link" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
       <a href="tel:+352691303502" class="contact-link">📞 +352 691 303 502</a>
     </div>
   </div>
 </section>
-
-<footer>
-  Luiz Assef · IT Technical Manager &amp; Technical Account Manager · Luxembourg → Canada / Europe · 2026
-</footer>
-
+<footer>Luiz Assef 2026. All rights reserved.</footer>
 </body>
 </html>
