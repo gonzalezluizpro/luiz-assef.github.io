@@ -1,7 +1,6 @@
 # 👋 Hi, I'm Luiz Assef
 
-> **Senior Technology Operations & Cloud Professional transitioning to AI Product Management & MLOps**  
-> Azure · AWS · ITIL · IaC · Service Delivery · 16+ years in regulated financial environments  
+> **Senior Technology Operations & Cloud Professional** | Azure · AWS · ITIL · IaC · Service Delivery · 16+ years in regulated environments  
 > 📍 Luxembourg → Europe · Canada | EU Citizen (Portuguese) | Fluent in English and French
 
 ---
@@ -10,17 +9,7 @@ With **16+ years** of experience supporting mission-critical IT infrastructure i
 
 I bridge infrastructure, operations, and business outcomes by combining hands-on expertise in **cloud operations (Azure & AWS)**, **ITIL-based service management**, **operational resilience**, **automation**, and **stakeholder coordination**.
 
-I am currently deepening my focus in **AI Product Management** and **MLOps**, with interest in **sovereign and hybrid AI architectures**, **responsible AI deployment**, **model operations**, and connecting legacy systems with modern AI capabilities in regulated environments.
-
----
-
-## 🎯 Target Roles
-
-| Role | Focus |
-|---|---|
-| **IT Technical Manager** | Cloud estate ownership · Infrastructure transformation · Security & compliance · Vendor management · Service reliability |
-| **Technical Account Manager** | Enterprise client advisory · End-to-end issue ownership · Stakeholder communication · Service delivery · Technical governance |
-| **AI Product Manager / MLOps PO** | AI platform strategy · Model operations · Hybrid AI · Responsible AI · Cross-functional execution |
+I am open to **Cloud**, **Technical Account Management**, and **AI platform** opportunities, including roles that connect operations, product thinking, and delivery in regulated enterprises.
 
 📍 **Open to opportunities in:** Luxembourg · Germany · Netherlands · Belgium · Canada (Quebec / Montreal)
 
@@ -56,6 +45,7 @@ I am currently deepening my focus in **AI Product Management** and **MLOps**, wi
 
 ## 🏅 Certifications
 
+- **AZ-104** Azure Administrator Associate (In Progress)
 - **AZ-900** Azure Fundamentals
 - **AWS Certified Cloud Practitioner**
 - **ITIL Foundation**
@@ -82,8 +72,8 @@ I am currently deepening my focus in **AI Product Management** and **MLOps**, wi
 **Senior Platform Operations Engineer** — ING Luxembourg  
 **Senior Infrastructure Engineer** — European Investment Bank / Sword Group  
 **Senior Application Support Engineer** — i2S Insurance Knowledge · Portugal  
-**IT Infrastructure Administrator** — Rio 2016 Olympic Games / Atos  
-**Systems Administrator & IT Operations Analyst** — BRQ Digital Solutions  
+**IT Project Manager** — Rio 2016 Olympic Games / Atos  
+**Systems Administrator** — BRQ Digital Solutions  
 **IT Systems Administrator** — Kronos Soluções
 
 ---
